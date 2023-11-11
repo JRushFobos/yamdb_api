@@ -7,6 +7,8 @@ from reviews.models import Category, Comment, Genre, Review, Title, User
 
 
 class Command(BaseCommand):
+    "Загрузка данных в БД"
+
     def handle(self, *args, **options):
         csv_models = (
             ('users.csv', User),
