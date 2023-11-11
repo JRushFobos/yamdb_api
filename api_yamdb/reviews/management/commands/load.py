@@ -49,6 +49,8 @@ CSV_MODELS = (
 
 
 class Command(BaseCommand):
+    "Загрузка данных в БД"
+
     def handle(self, *args, **options):
         sys.stdout.write(
             self.style.MIGRATE_HEADING('Loading into database:\n')
